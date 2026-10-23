@@ -5,9 +5,8 @@ from rest_framework.throttling import ScopedRateThrottle
 from .models import Color
 from .serializers import ColorSerializer
 
-
 class ColorListView(ListCreateAPIView):
-    queryset = Color.objects.all()
+    queryset = Color.objects.all().order_by("id")
     serializer_class = ColorSerializer
 
 

@@ -118,6 +118,7 @@ REST_FRAMEWORK = {
         "user": "20/min",
         "login": "5/min",    # for the token endpoint
     },
+    "DEFAULT_PAGINATION_CLASS": "colors.pagination.ColorPagination",
 }
 
 # Internationalization
