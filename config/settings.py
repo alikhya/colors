@@ -117,6 +117,7 @@ REST_FRAMEWORK = {
         "anon": "5/min",     # temporarily low so we can test easily
         "user": "20/min",
         "login": "5/min",    # for the token endpoint
+        "public": "5/min",
     },
     "DEFAULT_PAGINATION_CLASS": "colors.pagination.ColorPagination",
 }
